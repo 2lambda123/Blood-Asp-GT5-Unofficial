@@ -115,71 +115,71 @@ public class GT_ItemIterator
                     if ((tName.equals("item.ItemSensorLocationCard")) || (tName.equals("item.ItemEnergySensorLocationCard")) || (tName.equals("item.ItemEnergyArrayLocationCard")) || (tName.equals("item.ItemTextCard"))) {
                         GT_Values.RA.addAssemblerRecipe(new ItemStack(tItem, 1, 32767), null, ItemList.Circuit_Basic.get(2L, new Object[0]), 200, 32);
                     }
-                    if (tName.equals("item.ItemTimeCard")) {
+                    if ("item.ItemTimeCard".equals(tName)) {
                         GT_Values.RA.addAssemblerRecipe(new ItemStack(tItem, 1, 32767), null, ItemList.Circuit_Basic.get(1L, new Object[0]), 100, 32);
                     }
-                    if (tName.equals("tile.ArsMagica:ore_vinteum")) {
+                    if ("tile.ArsMagica:ore_vinteum".equals(tName)) {
                         GT_OreDictUnificator.set(OrePrefixes.ore, Materials.Vinteum, new ItemStack(tItem, 1, 0));
                     }
-                    if (tName.equals("item.ArsMagica:purified_vinteum")) {
+                    if ("item.ArsMagica:purified_vinteum".equals(tName)) {
                         GT_Values.RA.addFuel(new ItemStack(tItem, 1, 0), null, 256, 5);
                     }
                     if ((tName.equals("item.fieryBlood")) || (tName.equals("item.fieryTears"))) {
                         GT_Values.RA.addFuel(new ItemStack(tItem, 1, 0), null, 2048, 5);
                     }
-                    if (tName.equals("tile.TFRoots")) {
+                    if ("tile.TFRoots".equals(tName)) {
                         GT_ModHandler.addPulverisationRecipe(new ItemStack(tItem, 1, 0), new ItemStack(Items.stick, 2), new ItemStack(Items.stick, 1), 30);
                         GT_ModHandler.addSawmillRecipe(new ItemStack(tItem, 1, 0), new ItemStack(Items.stick, 4), new ItemStack(Items.stick, 2));
                         GT_Values.RA.addFuel(new ItemStack(tItem, 1, 1), new ItemStack(Items.stick, 4), 32, 5);
                     }
-                    if (tName.equals("item.tconstruct.manual")) {
+                    if ("item.tconstruct.manual".equals(tName)) {
                         GT_OreDictUnificator.registerOre("bookTinkersManual", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.ArsMagica:spell_parchment")) {
+                    if ("item.ArsMagica:spell_parchment".equals(tName)) {
                         GT_OreDictUnificator.registerOre("paperArsSpellParchment", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.ArsMagica:spell_recipe")) {
+                    if ("item.ArsMagica:spell_recipe".equals(tName)) {
                         GT_OreDictUnificator.registerOre("paperArsSpellRecipe", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.ArsMagica:spell_book")) {
+                    if ("item.ArsMagica:spell_book".equals(tName)) {
                         GT_OreDictUnificator.registerOre("bookArsSpells", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.myst.page")) {
+                    if ("item.myst.page".equals(tName)) {
                         GT_OreDictUnificator.registerOre("paperMystcraft", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.myst.agebook")) {
+                    if ("item.myst.agebook".equals(tName)) {
                         GT_OreDictUnificator.registerOre("bookMystcraftAge", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.myst.linkbook")) {
+                    if ("item.myst.linkbook".equals(tName)) {
                         GT_OreDictUnificator.registerOre("bookMystcraftLink", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.myst.notebook")) {
+                    if ("item.myst.notebook".equals(tName)) {
                         GT_OreDictUnificator.registerOre("bookNotes", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.itemManuelBook")) {
+                    if ("item.itemManuelBook".equals(tName)) {
                         GT_OreDictUnificator.registerOre("bookWritten", new ItemStack(tItem, 1, 0));
                     }
-                    if (tName.equals("item.blueprintItem")) {
+                    if ("item.blueprintItem".equals(tName)) {
                         GT_OreDictUnificator.registerOre("paperBlueprint", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.ccprintout")) {
+                    if ("item.ccprintout".equals(tName)) {
                         GT_OreDictUnificator.registerOre("paperWritten", new ItemStack(tItem, 1, 0));
                         GT_OreDictUnificator.registerOre("paperWritten", new ItemStack(tItem, 1, 1));
                         GT_OreDictUnificator.registerOre("bookWritten", new ItemStack(tItem, 1, 2));
                     }
-                    if (tName.equals("item.blueprintItem")) {
+                    if ("item.blueprintItem".equals(tName)) {
                         GT_OreDictUnificator.registerOre("paperBlueprint", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.wirelessmap")) {
+                    if ("item.wirelessmap".equals(tName)) {
                         GT_OreDictUnificator.registerOre("paperMap", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.ItemResearchNotes")) {
+                    if ("item.ItemResearchNotes".equals(tName)) {
                         GT_OreDictUnificator.registerOre("paperResearch", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.ItemThaumonomicon")) {
+                    if ("item.ItemThaumonomicon".equals(tName)) {
                         GT_OreDictUnificator.registerOre("bookThaumonomicon", new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("item.ligniteCoal")) {
+                    if ("item.ligniteCoal".equals(tName)) {
                         GT_OreDictUnificator.set(OrePrefixes.gem, Materials.Lignite, new ItemStack(tItem, 1, 0));
                     }
                     if ((tName.equals("tile.extrabiomes.redrock")) || (tName.equals("tile.bop.redRocks"))) {
@@ -187,7 +187,7 @@ public class GT_ItemIterator
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Redrock, new ItemStack(tItem, 1, 1));
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Redrock, new ItemStack(tItem, 1, 2));
                     }
-                    if (tName.equals("tile.rpstone")) {
+                    if ("tile.rpstone".equals(tName)) {
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Marble, new ItemStack(tItem, 1, 0));
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Basalt, new ItemStack(tItem, 1, 1));
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Marble, new ItemStack(tItem, 1, 2));
@@ -234,26 +234,26 @@ public class GT_ItemIterator
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Soapstone, new ItemStack(tItem, 1, 14));
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Migmatite, new ItemStack(tItem, 1, 15));
                     }
-                    if (tName.equals("tile.blockCosmeticSolid")) {
+                    if ("tile.blockCosmeticSolid".equals(tName)) {
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Obsidian, new ItemStack(tItem, 1, 0));
                         GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Obsidian, new ItemStack(tItem, 1, 1));
                     }
-                    if (tName.equals("tile.enderchest")) {
+                    if ("tile.enderchest".equals(tName)) {
                         GT_OreDictUnificator.registerOre(OreDictNames.enderChest, new ItemStack(tItem, 1, 32767));
                     }
-                    if (tName.equals("tile.autoWorkbenchBlock")) {
+                    if ("tile.autoWorkbenchBlock".equals(tName)) {
                         GT_OreDictUnificator.registerOre(OreDictNames.craftingWorkBench, new ItemStack(tItem, 1, 0));
                     }
-                    if (tName.equals("tile.pumpBlock")) {
+                    if ("tile.pumpBlock".equals(tName)) {
                         GT_OreDictUnificator.registerOre(OreDictNames.craftingPump, new ItemStack(tItem, 1, 0));
                         if (GregTech_API.sRecipeFile.get(ConfigCategories.Recipes.disabledrecipes, "BCPump", false)) {
                             GT_ModHandler.removeRecipeByOutput(new ItemStack(tItem, 1, 0));
                         }
                     }
-                    if (tName.equals("tile.tankBlock")) {
+                    if ("tile.tankBlock".equals(tName)) {
                         GT_OreDictUnificator.registerOre(OreDictNames.craftingTank, new ItemStack(tItem, 1, 0));
                     }
-                    if (tName.equals("item.drawplateDiamond")) {
+                    if ("item.drawplateDiamond".equals(tName)) {
                         GT_OreDictUnificator.registerOre(ToolDictNames.craftingToolDrawplate, new ItemStack(tItem, 1, 32767));
                     }
                 }

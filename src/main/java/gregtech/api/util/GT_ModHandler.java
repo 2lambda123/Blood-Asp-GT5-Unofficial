@@ -886,13 +886,13 @@ public class GT_ModHandler {
                     tItemDataMap.put(chr, GT_OreDictUnificator.getItemData((ItemStack) in));
                 } else if (in instanceof ItemData) {
                     String tString = in.toString();
-                    if (tString.equals("plankWood")) {
+                    if ("plankWood".equals(tString)) {
                         tItemDataMap.put(chr, new ItemData(Materials.Wood, M));
-                    } else if (tString.equals("stoneNetherrack")) {
+                    } else if ("stoneNetherrack".equals(tString)) {
                         tItemDataMap.put(chr, new ItemData(Materials.Netherrack, M));
-                    } else if (tString.equals("stoneObsidian")) {
+                    } else if ("stoneObsidian".equals(tString)) {
                         tItemDataMap.put(chr, new ItemData(Materials.Obsidian, M));
-                    } else if (tString.equals("stoneEndstone")) {
+                    } else if ("stoneEndstone".equals(tString)) {
                         tItemDataMap.put(chr, new ItemData(Materials.Endstone, M));
                     } else {
                         tItemDataMap.put(chr, (ItemData) in);

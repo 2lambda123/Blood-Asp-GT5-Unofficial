@@ -299,7 +299,7 @@ public abstract class GT_MetaGenerated_Tool extends GT_MetaBase_Item implements 
         int tOffset = getElectricStats(aStack) != null ? 2 : 1;
         if (tStats != null) {
             String name = aStack.getUnlocalizedName();
-            if (name.equals("gt.metatool.01.170") || name.equals("gt.metatool.01.172") || name.equals("gt.metatool.01.174") || name.equals("gt.metatool.01.176")) {
+            if ("gt.metatool.01.170".equals(name) || "gt.metatool.01.172".equals(name) || "gt.metatool.01.174".equals(name) || "gt.metatool.01.176".equals(name)) {
                 aList.add(tOffset + 0, EnumChatFormatting.WHITE + "Durability: " + EnumChatFormatting.GREEN + (tMaxDamage - getToolDamage(aStack)) + " / " + tMaxDamage + EnumChatFormatting.GRAY);
                 aList.add(tOffset + 1, EnumChatFormatting.WHITE + tMaterial.mDefaultLocalName + EnumChatFormatting.YELLOW + " lvl " + getHarvestLevel(aStack, "") + EnumChatFormatting.GRAY);
                 aList.add(tOffset + 2, EnumChatFormatting.WHITE + "Turbine Efficency: " + EnumChatFormatting.BLUE + (50.0F + (10.0F * getToolCombatDamage(aStack))) + EnumChatFormatting.GRAY);
