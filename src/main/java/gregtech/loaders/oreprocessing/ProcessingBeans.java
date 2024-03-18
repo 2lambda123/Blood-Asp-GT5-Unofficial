@@ -13,7 +13,7 @@ public class ProcessingBeans implements gregtech.api.interfaces.IOreRecipeRegist
     }
 
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
-        if (aOreDictName.equals("beansCocoa"))
+        if ("beansCocoa".equals(aOreDictName))
             GT_ModHandler.addPulverisationRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Cocoa, 1L));
     }
 }

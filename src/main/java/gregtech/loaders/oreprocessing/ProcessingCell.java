@@ -23,7 +23,7 @@ public class ProcessingCell
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
         if (aMaterial == Materials.Empty) {
             GT_ModHandler.removeRecipeByOutput(aStack);
-            if (aModName.equalsIgnoreCase("AtomicScience")) {
+            if ("AtomicScience".equalsIgnoreCase(aModName)) {
                 GT_ModHandler.addExtractionRecipe(ItemList.Cell_Empty.get(1L, new Object[0]), aStack);
             }
         } else {

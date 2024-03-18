@@ -603,7 +603,7 @@ public enum OrePrefixes {
     public static OrePrefixes getOrePrefix(String aOre) {
         for (OrePrefixes tPrefix : values())
             if (aOre.startsWith(tPrefix.toString())) {
-                if (tPrefix == oreNether && aOre.equals("oreNetherQuartz")) return ore;
+                if (tPrefix == oreNether && "oreNetherQuartz".equals(aOre)) return ore;
                 return tPrefix;
             }
         return null;

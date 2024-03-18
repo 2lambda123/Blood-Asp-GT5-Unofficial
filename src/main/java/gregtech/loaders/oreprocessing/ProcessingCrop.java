@@ -15,31 +15,31 @@ public class ProcessingCrop implements gregtech.api.interfaces.IOreRecipeRegistr
 
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, net.minecraft.item.ItemStack aStack) {
         GT_ModHandler.addCompressionRecipe(gregtech.api.util.GT_Utility.copyAmount(8L, new Object[]{aStack}), ItemList.IC2_PlantballCompressed.get(1L, new Object[0]));
-        if (aOreDictName.equals("cropTea")) {
+        if ("cropTea".equals(aOreDictName)) {
             GT_Values.RA.addBrewingRecipe(aStack, FluidRegistry.WATER, FluidRegistry.getFluid("potion.tea"), false);
             GT_Values.RA.addBrewingRecipe(aStack, GT_ModHandler.getDistilledWater(1L).getFluid(), FluidRegistry.getFluid("potion.tea"), false);
-        } else if (aOreDictName.equals("cropGrape")) {
+        } else if ("cropGrape".equals(aOreDictName)) {
             GT_Values.RA.addBrewingRecipe(aStack, FluidRegistry.WATER, FluidRegistry.getFluid("potion.grapejuice"), false);
             GT_Values.RA.addBrewingRecipe(aStack, GT_ModHandler.getDistilledWater(1L).getFluid(), FluidRegistry.getFluid("potion.grapejuice"), false);
-        } else if (aOreDictName.equals("cropChilipepper")) {
+        } else if ("cropChilipepper".equals(aOreDictName)) {
             GT_ModHandler.addPulverisationRecipe(aStack, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Chili, 1L));
-        } else if (aOreDictName.equals("cropCoffee")) {
+        } else if ("cropCoffee".equals(aOreDictName)) {
             GT_ModHandler.addPulverisationRecipe(aStack, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Coffee, 1L));
-        } else if (aOreDictName.equals("cropPotato")) {
+        } else if ("cropPotato".equals(aOreDictName)) {
             GT_Values.RA.addSlicerRecipe(aStack, ItemList.Shape_Slicer_Flat.get(0L, new Object[0]), ItemList.Food_Raw_PotatoChips.get(1L, new Object[0]), 64, 4);
             GT_Values.RA.addSlicerRecipe(aStack, ItemList.Shape_Slicer_Stripes.get(0L, new Object[0]), ItemList.Food_Raw_Fries.get(1L, new Object[0]), 64, 4);
             GT_Values.RA.addBrewingRecipe(aStack, FluidRegistry.WATER, FluidRegistry.getFluid("potion.potatojuice"), true);
             GT_Values.RA.addBrewingRecipe(aStack, GT_ModHandler.getDistilledWater(1L).getFluid(), FluidRegistry.getFluid("potion.potatojuice"), true);
-        } else if (aOreDictName.equals("cropLemon")) {
+        } else if ("cropLemon".equals(aOreDictName)) {
             GT_Values.RA.addSlicerRecipe(aStack, ItemList.Shape_Slicer_Flat.get(0L, new Object[0]), ItemList.Food_Sliced_Lemon.get(4L, new Object[0]), 64, 4);
             GT_Values.RA.addBrewingRecipe(aStack, FluidRegistry.WATER, FluidRegistry.getFluid("potion.lemonjuice"), false);
             GT_Values.RA.addBrewingRecipe(aStack, GT_ModHandler.getDistilledWater(1L).getFluid(), FluidRegistry.getFluid("potion.lemonjuice"), false);
             GT_Values.RA.addBrewingRecipe(aStack, FluidRegistry.getFluid("potion.vodka"), FluidRegistry.getFluid("potion.leninade"), true);
-        } else if (aOreDictName.equals("cropTomato")) {
+        } else if ("cropTomato".equals(aOreDictName)) {
             GT_Values.RA.addSlicerRecipe(aStack, ItemList.Shape_Slicer_Flat.get(0L, new Object[0]), ItemList.Food_Sliced_Tomato.get(4L, new Object[0]), 64, 4);
-        } else if (aOreDictName.equals("cropCucumber")) {
+        } else if ("cropCucumber".equals(aOreDictName)) {
             GT_Values.RA.addSlicerRecipe(aStack, ItemList.Shape_Slicer_Flat.get(0L, new Object[0]), ItemList.Food_Sliced_Cucumber.get(4L, new Object[0]), 64, 4);
-        } else if (aOreDictName.equals("cropOnion")) {
+        } else if ("cropOnion".equals(aOreDictName)) {
             GT_Values.RA.addSlicerRecipe(aStack, ItemList.Shape_Slicer_Flat.get(0L, new Object[0]), ItemList.Food_Sliced_Onion.get(4L, new Object[0]), 64, 4);
         }
     }

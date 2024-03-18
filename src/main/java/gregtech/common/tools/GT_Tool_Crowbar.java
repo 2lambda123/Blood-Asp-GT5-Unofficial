@@ -92,7 +92,7 @@ public class GT_Tool_Crowbar
             }
             return true;
         }
-        return tTool.equals("crowbar");
+        return "crowbar".equals(tTool);
     }
 
     public ItemStack getBrokenItem(ItemStack aStack) {
